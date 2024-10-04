@@ -1,0 +1,56 @@
+{
+	"name": "@accuser/hast-util-type-guards",
+	"version": "1.0.0",
+	"description": "TypeScript type guards for `hast` nodes.",
+	"type": "module",
+	"main": "dist/index.js",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"format": "prettier --write {src,test}/**/*.{js,ts}",
+		"lint": "eslint",
+		"test": "vitest"
+	},
+	"keywords": [
+		"hast",
+		"typescript",
+		"type guard"
+	],
+	"author": {
+		"email": "mhgibbons@me.com",
+		"name": "Matthew Gibbons",
+		"url": "https://github.com/accuser"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/accuser/hast-util-type-guards.git"
+	},
+	"bugs": {
+		"url": "https://github.com/accuser/hast-util-type-guards/issues"
+	},
+	"devDependencies": {
+		"@types/node": "^22.7.4",
+		"@typescript-eslint/eslint-plugin": "^8.8.0",
+		"@typescript-eslint/parser": "^8.8.0",
+		"eslint": "^9.11.1",
+		"eslint-config-prettier": "^9.1.0",
+		"prettier": "^3.3.3",
+		"tslib": "^2.7.0",
+		"typescript": "^5.6.2",
+		"vitest": "^2.1.2"
+	},
+	"dependencies": {
+		"@accuser/unist-util-type-guards": "^1.1.0",
+		"@types/hast": "^3.0.4"
+	}
+}
